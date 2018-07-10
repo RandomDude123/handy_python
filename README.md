@@ -1,6 +1,4 @@
 ## This is a collection of useful python code snippets i stumbled on.
-> All performance related statements are based on comparing execution times with `%timeit` on my personal computer.
-
 
 Create a dict of a list mapping the index of an element as key to the value:
 ```python
@@ -40,3 +38,5 @@ for k, v in sorted(cnt.items()):
 # b 2
 # c 1
 ```
+
+> All performance related statements are based on comparing execution times with `%timeit` on my personal computer.
