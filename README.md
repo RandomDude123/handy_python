@@ -1,5 +1,14 @@
 ## This is a collection of useful python code snippets i stumbled on.
 
+Flatten list of lists:
+```python
+parent_list = [['a', 'b', 'c'], [1, 2, 3]]
+flat_list = [elem for child_list in parent_list for elem in child_list]
+
+# better in termce of speed
+flat_list = sum(parent_list, [])
+```
+
 Counting with a dict:
 ```python
 elem_list = ['a', 'b', 'c', 'a', 'b', 'a']
