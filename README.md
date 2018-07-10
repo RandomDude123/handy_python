@@ -6,7 +6,7 @@ elem_list = ['a', 'b', 'c']
 index_dict = dict(enumerate(elem_list))
 # {0: 'a', 1: 'b', 2: 'c'}
 
-# index as value of the dict and elem as key
+# index as value and elem as key of the dict
 elem_index_dict = {elem: i for i, elem in enumerate(elem_list)}
 # {'a': 0, 'b': 1, 'c': 2}
 ```
