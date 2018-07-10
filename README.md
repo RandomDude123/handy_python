@@ -1,6 +1,6 @@
 ## This is a collection of useful python code snippets i stumbled on.
 
-# Create a dict of a list mapping the index of an element as key to the value:
+### Create a dict of a list mapping the index of an element as key to the value:
 ```python
 elem_list = ['a', 'b', 'c']
 index_dict = dict(enumerate(elem_list))
@@ -14,7 +14,7 @@ elem_index_dict = {elem: i for i, elem in enumerate(elem_list)}
 # {'a': 0, 'b': 1, 'c': 2}
 ```
 
-# Flatten list of lists:
+### Flatten list of lists:
 ```python
 parent_list = [['a', 'b', 'c'], [1, 2, 3]]
 flat_list = [elem for child_list in parent_list for elem in child_list]
@@ -23,7 +23,7 @@ flat_list = [elem for child_list in parent_list for elem in child_list]
 flat_list = sum(parent_list, [])
 ```
 
-# Counting with a dict:
+### Counting with a dict:
 ```python
 elem_list = ['a', 'b', 'c', 'a', 'b', 'a']
 
