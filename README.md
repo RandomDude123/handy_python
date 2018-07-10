@@ -1,5 +1,12 @@
 ## This is a collection of useful python code snippets i stumbled on.
 
+Create a dict of a list mapping the index of an element as key to the value:
+```python
+elem_list = ['a', 'b', 'c']
+index_dict = dict(enumerate(elem_list))
+# {0: 'a', 1: 'b', 2: 'c'}v
+```
+
 Flatten list of lists:
 ```python
 parent_list = [['a', 'b', 'c'], [1, 2, 3]]
