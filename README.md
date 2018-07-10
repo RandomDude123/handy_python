@@ -1,7 +1,7 @@
 ## This is a collection of useful python code snippets i stumbled on.
 
 Counting with a dict:
-```
+```python
 elem_list = ['a', 'b', 'c', 'a', 'b', 'a']
 
 cnt = {}
