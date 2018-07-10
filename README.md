@@ -11,7 +11,7 @@ for elem in elem_list:
 
 for k, v in sorted(cnt.items()):
     print(k, v)
->>a 3
->>b 2
->>c 1
+>> a 3
+>> b 2
+>> c 1
 ```
