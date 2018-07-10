@@ -5,7 +5,7 @@ Flatten list of lists:
 parent_list = [['a', 'b', 'c'], [1, 2, 3]]
 flat_list = [elem for child_list in parent_list for elem in child_list]
 
-# better in termce of speed
+# better in terms of speed
 flat_list = sum(parent_list, [])
 ```
 
