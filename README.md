@@ -39,4 +39,11 @@ for k, v in sorted(cnt.items()):
 # c 1
 ```
 
+### Dump json to file:
+```python
+import json
+with open('data.json', 'w') as f:
+    json.dump(data, f)
+```
+
 > All performance related statements are based on comparing execution times with `%timeit` on my personal computer.
