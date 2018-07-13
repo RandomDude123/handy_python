@@ -1,5 +1,21 @@
 ## This is a collection of useful python code snippets i stumbled on.
 
+### Use ''.format() in different ways
+```python
+class exampleClass:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+        
+example = exampleClass(1, 'hello', 1.234)
+
+print('{e.a} and {e.b} and {e.c}'.format(e=example))
+
+# even cooler
+print(f'{example.a} and {example.b} and {example.c}')
+```
+
 ### Create a dict of a list mapping the index of an element as key to the value:
 ```python
 elem_list = ['a', 'b', 'c']
@@ -46,4 +62,5 @@ with open('data.json', 'w') as f:
     json.dump(data, f)
 ```
 
+> All snippets are tested on Python 3.6.3.
 > All performance related statements are based on comparing execution times with `%timeit` on my personal computer.
