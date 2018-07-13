@@ -1,6 +1,6 @@
 ## This is a collection of useful python code snippets i stumbled on.
 
-### Use ''.format() in different ways
+### Use format() in different ways
 ```python
 class exampleClass:
     def __init__(self, a, b, c):
