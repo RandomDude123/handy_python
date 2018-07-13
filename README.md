@@ -63,4 +63,5 @@ with open('data.json', 'w') as f:
 ```
 
 > All snippets are tested on Python 3.6.3.
+
 > All performance related statements are based on comparing execution times with `%timeit` on my personal computer.
