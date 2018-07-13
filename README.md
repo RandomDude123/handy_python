@@ -62,6 +62,6 @@ with open('data.json', 'w') as f:
     json.dump(data, f)
 ```
 
-> For Python 3.6.3.
+> Tested with Python 3.6.3.
 
 > All performance related statements are based on comparing execution times with `%timeit` on my personal computer.
