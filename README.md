@@ -1,5 +1,20 @@
 ## This is a collection of useful python code snippets i stumbled on.
 
+### Error handling & logging
+```python
+import sys
+import logging
+
+def error_handling(em):
+    # (type, value, traceback)
+    return f'{em[0]}. {em[1]}, line: {em[2].tb_lineno}'
+
+try:
+    x = 1 / 0
+except Exception as e:
+    logging.error(error_handling(sys.exc_info()))
+```
+
 ### Use format() in different ways
 ```python
 class exampleClass:
