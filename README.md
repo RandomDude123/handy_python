@@ -1,5 +1,19 @@
 ## This is a collection of useful python code snippets i stumbled on.
 
+### use f-strings
+```python
+x = 10
+
+# exception message example
+raise ValueError(f"Expected {x!r} to a float not a {type(x).__name__}")
+
+# formatting still works the same
+print(f'This is a print of x with leading 0s: {x :08d}')
+
+# even code runs inside { }
+print(f'This is a print of x with leading 0s: {x ** 2 :08d}')
+```
+
 ### Error handling & logging
 ```python
 import sys
