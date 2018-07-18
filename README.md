@@ -1,5 +1,12 @@
 ## This is a collection of useful python code snippets i stumbled on.
 
+### use start-argument in enumerate
+```python
+letters = 'abcde'
+for i, letter in enumerate(letters, start=1):
+    print(i, letter)
+```
+
 ### use f-strings
 ```python
 x = 10
