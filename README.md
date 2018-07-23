@@ -91,7 +91,7 @@ for elem in elem_list:
     cnt[elem] = cnt.get(elem, 0) + 1
 
 
-for k, v in sorted(cnt.items()):
+for k, v in sorted(cnt.items(), key=lambda k: k[1], reverse=True):
     print(k, v)
 >>> a 3
 >>> b 2
