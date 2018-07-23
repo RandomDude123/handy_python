@@ -1,5 +1,12 @@
 ## This is a collection of useful python code snippets i stumbled on.
 
+### remove whitespaces from string
+```python
+test_str = 'a\n\t  b\n\t             c'
+' '.join(test_str.split())
+>>> 'a b c'
+```
+
 ### use start-argument in enumerate
 ```python
 letters = 'abcde'
@@ -56,14 +63,14 @@ print(f'{example.a} and {example.b} and {example.c}')
 ```python
 elem_list = ['a', 'b', 'c']
 index_dict = dict(enumerate(elem_list))
-# {0: 'a', 1: 'b', 2: 'c'}
+>>> {0: 'a', 1: 'b', 2: 'c'}
 
 # better in terms of speed
 index_dict =  {i: elem for i, elem in enumerate(elem_list)}
 
 # index as value and elem as key of the dict
 elem_index_dict = {elem: i for i, elem in enumerate(elem_list)}
-# {'a': 0, 'b': 1, 'c': 2}
+>>> {'a': 0, 'b': 1, 'c': 2}
 ```
 
 ### Flatten list of lists:
@@ -86,9 +93,9 @@ for elem in elem_list:
 
 for k, v in sorted(cnt.items()):
     print(k, v)
-# a 3
-# b 2
-# c 1
+>>> a 3
+>>> b 2
+>>> c 1
 ```
 
 ### Dump json to file:
